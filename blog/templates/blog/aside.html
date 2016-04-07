@@ -1,0 +1,71 @@
+{% load i18n %}
+{% load thumbnail %}
+{% load blog_tags %}
+        <div class="col-md-4 sidebar-gutter">
+            <aside>
+            <!-- sidebar-widget -->
+            <div class="sidebar-widget">
+                <h3 class="sidebar-title">{% trans "About Me" %}</h3>
+                <div class="widget-container widget-about">
+                    {% if profiles %}
+                    <img src="{% thumbnail profiles.photo 720x740 crop="100%" %}" alt="">
+                    {% else %}
+                    {% endif %}
+                    <h4>{{ profiles.name }}</h4>
+                    <div class="author-title">{{ profiles.occupation }}</div>
+                    <p>{{ profiles.description|markdown }}</p>
+                </div>
+            </div>
+
+            <!-- total posts templatetag -->
+            <div class="sidebar-widget">
+                <h3 class="sidebar-title">{% trans "Total Posts" %}</h3>
+                <div class="widget-container">
+                    <article class="widget-post">
+                        <div class="post-image">
+                            <i class="fa fa-pencil-square fa-2x"></i>
+                        </div>
+                        <div class="post-body">
+                             <h2>{% trans "Post so far in this blog" %}{% total_posts %}</h2>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- latest posts -->
+            <div class="sidebar-widget">
+                <h3 class="sidebar-title">{% trans "Latest Posts" %}</h3>
+                {% show_latest_posts 3 %}
+            </div>
+
+            <!-- sidebar-widget -->
+            <div class="sidebar-widget">
+                <h3 class="sidebar-title">{% trans "Socials" %}</h3>
+                <div class="widget-container">
+                    <div class="widget-socials">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                        <a href="#"><i class="fa fa-reddit"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- sidebar-widget -->
+            <div class="sidebar-widget">
+                <h3 class="sidebar-title">{% trans "Categories" %}</h3>
+                <div class="widget-container">
+                    <ul>
+                        <li><a href="#">Fashion</a></li>
+                        <li><a href="#">Art</a></li>
+                        <li><a href="#">Design</a></li>
+                        <li><a href="#">Featured</a></li>
+                        <li><a href="#">Graphics</a></li>
+                        <li><a href="#">Peoples</a></li>
+                        <li><a href="#">Uncategorized</a></li>
+                    </ul>
+                </div>
+            </div>
+            </aside>
+        </div>

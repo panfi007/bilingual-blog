@@ -1,0 +1,12 @@
+{% load blog_tags %}
+{% load thumbnail %}
+    {% for post in slider_latest %}
+    <li>
+        <div class="slider-item"><img src="{% thumbnail post.image 1240x500 crop="100%" %}"
+                                      title="{{ post.title }}" />
+        <h2>
+            <a href="{{ post.get_absolute_url }}" title="{{ post.title }}">{{ post.title }}</a>
+        </h2>
+        </div>
+    </li>
+    {% endfor %}

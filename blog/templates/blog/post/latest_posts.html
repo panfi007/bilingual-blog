@@ -1,0 +1,25 @@
+{% load thumbnail %}
+    <div class="widget-container">
+        {% for post in latest_posts %}
+        <article class="widget-post">
+         {% if post.image %}
+            <div class="post-image">
+                <a href="{{ post.get_absolute_url }}">
+                    <img src="{% thumbnail post.image 90x60 crop="100%" %}" alt="">
+                </a>
+            </div>
+            {% else %}
+            <div class="post-image">
+                <a href=""><img src="" alt=""></a>
+            </div>
+         {% endif %}
+            <div class="post-body">
+                <h2><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h2>
+                <div class="post-meta"><span>Published by <a href="#">{{ post.author }}</a>
+                    </span>/<span><i class="fa fa-clock-o"></i>{{ post.publish }}</span>/
+                        <span><i class="fa fa-comment-o"></i> <a href="#">343</a>
+                </span></div>
+            </div>
+        </article>
+        {% endfor %}
+    </div>

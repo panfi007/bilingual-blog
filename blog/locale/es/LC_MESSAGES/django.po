@@ -1,0 +1,131 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-04 17:54-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: models.py:24
+msgid "title"
+msgstr "título"
+
+#: models.py:27
+msgid "image"
+msgstr "imagen"
+
+#: models.py:28
+msgid "body"
+msgstr "cuerpo"
+
+#: models.py:29
+msgid "publish"
+msgstr "publicar"
+
+#: models.py:32
+msgid "status"
+msgstr "estatus"
+
+#: models.py:50
+msgid "name"
+msgstr "nombre"
+
+#: models.py:51
+msgid "occupation"
+msgstr "ocupación"
+
+#: models.py:53
+msgid "date of birth"
+msgstr "fecha de nacimiento"
+
+#: models.py:54
+msgid "photo"
+msgstr "foto"
+
+#: models.py:55
+msgid "description"
+msgstr "descripción"
+
+#: templates/blog/aside.html:8
+msgid "About Me"
+msgstr "Sobre Mí"
+
+#: templates/blog/aside.html:22
+msgid "Total Posts"
+msgstr "Publicaciones Totales"
+
+#: templates/blog/aside.html:29
+msgid "Post so far in this blog"
+msgstr "Publicaciones hasta ahora en este blog"
+
+#: templates/blog/aside.html:37
+msgid "Latest Posts"
+msgstr "Últimas Publicaciones"
+
+#: templates/blog/aside.html:43
+msgid "Socials"
+msgstr "Redes Sociales"
+
+#: templates/blog/aside.html:57
+msgid "Categories"
+msgstr "Categorías"
+
+#: templates/blog/base.html:80
+msgid "Copyright Pánfulo 2016. All rights reserved"
+msgstr "Copyright Pánfulo 2016. Todos los derechos reservados"
+
+#: templates/blog/post/detail.html:22
+#, fuzzy
+#| msgid "publish"
+msgid "Published by "
+msgstr "Publicado por "
+
+#: templates/blog/post/list.html:6
+msgid "Tecuan Soccer League"
+msgstr "Liga de Fútbol El Tecuán"
+
+#: templates/blog/post/list.html:21
+msgid "Posts tagged with "
+msgstr "Publicaciones con la etiqueta "
+
+#: templates/blog/post/list.html:45
+msgid "Tags"
+msgstr "Etiquetas"
+
+#: templates/blog/post/list.html:54
+msgid "Continue Reading"
+msgstr "Continuar Leyendo"
+
+#: templates/pagination.html:6
+msgid "Previous"
+msgstr "Anterior"
+
+#: templates/pagination.html:10
+msgid "Page "
+msgstr "Página "
+
+#: templates/pagination.html:10
+msgid "of"
+msgstr "de"
+
+#: templates/pagination.html:14
+msgid "Next"
+msgstr "Siguiente"
+
+#~ msgid "author"
+#~ msgstr "autor"
+
+#~ msgid "user"
+#~ msgstr "usuario"
