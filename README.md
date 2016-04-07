@@ -19,4 +19,5 @@
 * Create your superuser for admin (python manage.py createsuperuser)
 * Run your server 
 * Login to admin site http://127.0.0.1:8000/en/admin/ (That is why the superuser creation)
-* Add all the posts you need
+* Add your profile in profiles section (In blog/views file we only look for the first profile)
+* Create all the posts you need
