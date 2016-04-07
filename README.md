@@ -19,6 +19,4 @@
 * Create your superuser for admin (python manage.py createsuperuser)
 * Run your server 
 * Login to admin site http://127.0.0.1:8000/en/admin/ (That is why the superuser creation)
-* Add all the posts you needed
-
-
+* Add all the posts you need
